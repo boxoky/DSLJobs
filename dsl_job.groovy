@@ -16,6 +16,7 @@ job('ejemplo_Primer_JobDSL'){
   	
     triggers{
       cron('H/7 * * * *')
+      githubPush()
     }
   
     steps{
